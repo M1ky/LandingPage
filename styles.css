@@ -8,8 +8,7 @@
 }
 
 body {
-	height: 200vh;
-	background-color: blue;
+	height: calc(100vh + 300px);
 }
 
 header {
@@ -83,15 +82,20 @@ img:nth-child(3) {
 	display: flex;
 	justify-content: space-center;
 	align-items: center;
-	top: 110%;
+	top: calc(100% + 66px);
 }
 
 .information p {
 	box-sizing: border-box;
 	flex-basis: 33.33%;
 	text-align: justify;
-	border: 3px green solid;
-	height: 350px;
+	height: 300px;
 	padding: 2px;
 	overflow: hidden;
+	background-color: rgb(185, 134, 40);
+}
+
+.information p:nth-child(2) {
+	color: rgb(185, 134, 40);
+	background-color: white;
 }
